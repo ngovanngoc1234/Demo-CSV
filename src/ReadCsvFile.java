@@ -40,10 +40,8 @@ public class ReadCsvFile {
     }
 
     private static void printStudent(List<String> student) {
-        System.out.println(
-                "Student [id= "
-                        + student.get(0)
-                        + ", name= " + student.get(1)
-                        + "]");
+        for (String s: student) {
+            System.out.println(s.toString());
+        }
     }
 }
